@@ -21,14 +21,26 @@ body {
   color: var(--first-text-color);
   font-size: 16px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .down-logo {
   text-decoration: none;
 }
 .list {
   list-style-type: none;
 }
-.lists {
+.listz {
   list-style-type: none;
+  display: flex;
 }
 .example {
   list-style-type: none;
@@ -51,6 +63,18 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* container*/
+.container {
+  width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* logo 
 #4D5AE5
 #2E2F42
@@ -64,12 +88,27 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 156px;
 }
 .colortext {
   color: var(--second-text-color);
 }
+.global-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 /*site-nav*/
+.site-nav {
+  display: flex;
+  margin-left: 77px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
 .site-nav .list {
   color: var(--third-text-color);
   font-weight: 600;
@@ -86,18 +125,47 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--third-text-color);
+
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /*auth-nav*/
+.auth-nav {
+  margin-right: 156px;
+}
+.lists {
+  list-style-type: none;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 0;
+}
+.lists .item + .item {
+  margin-left: 40px;
+}
 .auth-nav .link {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+
+  align-items: center;
   line-height: 1.5;
   text-decoration: none;
   color: var(--first-text-color);
+
   cursor: default;
   font-style: normal;
 }
 .auth-nav .tel {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+
   line-height: 1.5;
+  min-width: 151px;
+
   text-decoration: none;
   color: var(--first-text-color);
   cursor: default;
@@ -118,13 +186,16 @@ body {
 #4D5AE5*/
 .hero {
   background-color: var(--third-text-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   color: #ffffff;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.1;
-  text-align: center;
 }
 .hero .button {
   background-color: var(--second-text-color);
@@ -145,13 +216,25 @@ body {
 /* info
 #2E2F42 */
 
-.info-titles {
+.info {
+  margin-bottom: 120px;
+}
+.listz {
+  margin-left: 156px;
+  margin-right: 156px;
+}
+.listz .item:not(:last-child) {
+  margin-right: 24px;
+}
+.info-title {
+  margin-top: 120px;
+  margin-bottom: 8px;
   color: var(--third-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
-.info > p {
+.info > .p {
   line-height: 1.5;
 }
 /* photo 
