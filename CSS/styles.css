@@ -14,6 +14,7 @@
   --first-text-color: #434455;
   --second-text-color: #4d5ae5;
   --third-text-color: #2e2f42;
+  --card-set-gap: 24px;
 }
 body {
   background-color: #ffffff;
@@ -21,6 +22,7 @@ body {
   color: var(--first-text-color);
   font-size: 16px;
 }
+
 h1,
 h2,
 h3,
@@ -68,6 +70,8 @@ ul {
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 /* main-nav */
 .main-nav {
@@ -132,14 +136,11 @@ ul {
 }
 
 /*auth-nav*/
-.auth-nav {
-  margin-right: 156px;
-}
+
 .lists {
   list-style-type: none;
   display: flex;
-  padding-right: 15px;
-  padding-left: 0;
+  padding-left: 331px;
 }
 .lists .item + .item {
   margin-left: 40px;
@@ -187,6 +188,8 @@ ul {
 .hero {
   background-color: var(--third-text-color);
   text-align: center;
+  padding-top: 192px;
+  padding-bottom: 291px;
 }
 .hero-title {
   margin-top: 0;
@@ -208,6 +211,7 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
   font-family: inherit;
+  padding: 16px 32px;
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -220,12 +224,12 @@ ul {
   margin-bottom: 120px;
 }
 .listz {
-  margin-left: 156px;
-  margin-right: 156px;
+  padding-left: 0;
 }
 .listz .item:not(:last-child) {
   margin-right: 24px;
 }
+
 .info-title {
   margin-top: 120px;
   margin-bottom: 8px;
@@ -234,21 +238,39 @@ ul {
   font-size: 20px;
   line-height: 1.2;
 }
-.info > .p {
+.info > p {
   line-height: 1.5;
+  width: 264px;
 }
 /* photo 
 #2E2F42 */
+
+.titles-ph {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 0;
+  margin-bottom: 120px;
+}
+.titles-ph li:not(:last-child) {
+  margin-right: 24px;
+}
+.titles-ph:nth-child(n3) {
+  margin-right: 0;
+}
 .photo-titles {
   color: var(--third-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
+  margin-bottom: 72px;
 }
+
 /* team 
 #2E2F42
 #F4F4FD*/
+
 .team {
   background-color: #f4f4fd;
 }
@@ -257,6 +279,9 @@ ul {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.1;
+  margin-bottom: 72px;
+  text-align: center;
+  padding-top: 120px;
 }
 .team > h3 {
   color: var(--third-text-color);
@@ -264,8 +289,36 @@ ul {
   font-size: 20px;
   line-height: 1.2;
 }
-.team > p {
+.team > .titlt-text {
   line-height: 1.5;
+}
+.titles-tm {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 120px;
+}
+.titles-tm li:not(:last-child) {
+  margin-right: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* CARD*/
+
+.card-content {
+  text-align: center;
+  padding: 32px;
+  background-color: #ffffff;
+}
+.card-text {
+  margin-top: 10px;
+}
+.color-box {
+  background-color: #f4f4fd;
 }
 /* foooter сайта
 #2E2F42
@@ -273,6 +326,7 @@ ul {
 #E7E9FC*/
 .down {
   background-color: var(--third-text-color);
+  padding-top: 100px;
 }
 .down-logo {
   color: #f4f4fd;
@@ -287,8 +341,13 @@ ul {
 }
 .down p {
   color: #e7e9fc;
-
   line-height: 1.5;
+  font-size: 16px;
+  padding-bottom: 100px;
+  width: 264px;
+}
+.color-down {
+  background-color: var(--third-text-color);
 }
 
 /* portfolio*/
@@ -298,6 +357,16 @@ ul {
 #4D5AE5
 #E7E9FC
 */
+.filter-link {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  margin-top: 96px;
+}
+
+.filter-box:not(:last-child) {
+  margin-right: 24px;
+}
 .gallery-link {
   color: var(--second-text-color);
 
@@ -311,6 +380,7 @@ ul {
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
+  min-width: 126px;
 }
 .gallery-link:hover,
 .gallery-link:focus {
@@ -320,6 +390,15 @@ ul {
 /* portfolio photo 
 #2E2F42*/
 
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  margin-top: 72px;
+  justify-content:space-between;
+  margin-right: 24px;
+}
 .example-titles {
   font-weight: 600;
   font-size: 20px;
@@ -330,4 +409,33 @@ ul {
 .example a {
   line-height: 1.5;
   color: var(--first-text-color);
+}
+.example-card{
+  margin-bottom: 48px;
+  
+}
+.flex-element{
+  padding: 32px;
+  border: 1px #0606ad;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.box-gallery{
+  margin-bottom: 120px;
+}
+
+
+
+/*.flex-container {
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.flex-container:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-container:nth-last-child(-n + 3) {
+  margin-bottom: o;
 }
