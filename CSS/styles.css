@@ -127,8 +127,7 @@ ul {
   border-color: var(--second-text-color);
   border-radius: 2px;
   height: 4px;
-  top: 48px;
-  
+  top: 48px; 
 }
 /*.site-nav .item:hover{
   border-bottom: solid;
@@ -257,7 +256,7 @@ ul {
   width: 264px;
   font-size: 16px;
   font-family: inherit;
-color:var(--first-text-color);
+  color:var(--first-text-color);
 }
 /* photo 
 #2E2F42 */
