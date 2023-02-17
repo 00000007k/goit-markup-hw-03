@@ -67,12 +67,11 @@ ul {
 }
 /* container*/
 .container {
-  align-items: center;
+ 
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: 156px;
-  margin-right: 156px;
+  margin: 0 auto;
 }
 /* main-nav */
 .main-nav {
