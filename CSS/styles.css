@@ -67,6 +67,7 @@ ul {
 }
 /* container*/
 .container {
+  align-items: center;
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
@@ -122,7 +123,17 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--second-text-color);
+  border-bottom: solid;
+  border-color: var(--second-text-color);
+  border-radius: 2px;
+  height: 4px;
+  top: 48px;
+  
 }
+/*.site-nav .item:hover{
+  border-bottom: solid;
+  border-color: var(--second-text-color);
+}*/
 .site-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -189,9 +200,10 @@ ul {
   background-color: var(--third-text-color);
   text-align: center;
   padding-top: 192px;
-  padding-bottom: 291px;
+  padding-bottom: 192px;
 }
 .hero-title {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 48px;
 
@@ -199,13 +211,14 @@ ul {
   font-weight: 600;
   font-size: 56px;
   line-height: 1.1;
+  
 }
 .hero .button {
   background-color: var(--second-text-color);
   color: #ffffff;
   border: var(--second-text-color);
   font-weight: 600;
-  font-family: in;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -237,10 +250,14 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  
 }
-.info > p {
+.info > .titlt-text {
   line-height: 1.5;
   width: 264px;
+  font-size: 16px;
+  font-family: inherit;
+color:var(--first-text-color);
 }
 /* photo 
 #2E2F42 */
@@ -275,6 +292,7 @@ ul {
   background-color: #f4f4fd;
 }
 .team-titles {
+  font-family: inherit;
   color: var(--third-text-color);
   font-weight: 600;
   font-size: 36px;
@@ -308,6 +326,10 @@ img {
   height: auto;
 }
 /* CARD*/
+.card-heading{
+font-family: inherit;
+font-size: 20px;
+}
 
 .card-content {
   text-align: center;
@@ -316,6 +338,8 @@ img {
 }
 .card-text {
   margin-top: 10px;
+  font-size: 16px;
+  font-family: inherit;
 }
 .color-box {
   background-color: #f4f4fd;
@@ -372,7 +396,7 @@ img {
 
   background-color: #f4f4fd;
   border: #e7e9fc;
-  font-weight: 600;
+  font-weight: 500;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
@@ -400,10 +424,17 @@ img {
   
 }
 .example-titles {
+  font-family: inherit;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: var(--third-text-color);
+}
+.example-titles p {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--first-text-color);
 }
 
 .example a {
@@ -414,9 +445,16 @@ img {
 
 .flex-element{
   padding: 32px;
-  border: 1px #0606ad;
+  border-style: solid;
+  border-color: #F4F4FD;
+  border-top: 0;
   text-align: left;
   padding-left: 16px;
+}
+.flex-element > p{
+  font-family: inherit;
+  color: var(--first-text-color);
+  font-size: 16px;
 }
 
 .box-gallery{
