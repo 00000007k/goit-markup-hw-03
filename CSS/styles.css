@@ -71,6 +71,7 @@ ul {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+  align-items: center;
 }
 .section {
   padding-bottom: 120px;
@@ -100,10 +101,10 @@ ul {
 }
 .global-nav {
   display: inline-block;
-  align-items: center;
-  min-width: 1425px;
   height: 72px;
   padding-top: 24px;
+  text-align: center;
+  width: 100%;
 }
 .header-logo {
   display: flex;
