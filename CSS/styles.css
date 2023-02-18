@@ -378,6 +378,7 @@ img {
   padding-left: 0;
   justify-content: center;
   padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .filter-box:not(:last-child) {
@@ -415,8 +416,6 @@ img {
   flex-wrap: wrap;
   
   padding-left: 0;
-
-  margin-top: 72px;
   
 }
 .example-titles {
@@ -441,9 +440,8 @@ img {
 
 .flex-element{
   padding: 32px;
-  border-style: solid;
-  border-color: #F4F4FD;
-  border-top: 0;
+  border: 1px solid #F4F4FD;
+  border-top: none;
   text-align: left;
   padding-left: 16px;
 }
