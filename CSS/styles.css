@@ -430,7 +430,7 @@ img {
 
 .flex-element {
   padding: 32px;
-  border: 1px solid #f4f4fd;
+  border: 0.5px solid #f4f4fd;
   border-top: none;
   text-align: left;
   padding-left: 16px;
