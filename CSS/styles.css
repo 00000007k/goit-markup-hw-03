@@ -391,7 +391,6 @@ img {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   cursor: pointer;
-  max-width: 126;
 }
 .gallery-link:hover,
 .gallery-link:focus {
